@@ -1,0 +1,14 @@
+<button mdl-button #btn1="mdlButton" (click)="m1.toggle($event, btn1)" mdl-button-type="icon" mdl-ripple><mdl-icon>more_vert</mdl-icon></button>
+<mdl-menu #m1="mdlMenu" mdl-menu-position="bottom-left">
+   <mdl-menu-item mdl-ripple (click)="action()">Some Action</mdl-menu-item>
+   <mdl-menu-item mdl-ripple mdl-menu-item-full-bleed-divider>Another Action</mdl-menu-item>
+   <mdl-menu-item mdl-ripple disabled>Disabled Action</mdl-menu-item>
+   <mdl-menu-item>Yet Another Action</mdl-menu-item>
+</mdl-menu>
+
+<mdl-card class="demo-card-image" mdl-shadow="2">
+  <mdl-card-title mdl-card-expand></mdl-card-title>
+  <mdl-card-actions>
+    Place for image
+  </mdl-card-actions>
+</mdl-card>
